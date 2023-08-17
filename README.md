@@ -1,23 +1,8 @@
 # Cat Monitor
 
-Authors: John Culley, Kai Imery, Ananth Sanjay, Jeffrey Zhang
+Authors: John Culley
 
 Date: 2023-03-21
-
-### Summary
-To create the remote cat monitor we first identified and mapped out the key components of the project. The first step of the project was to determine how all of the many devices were going to be organized and to figure out how the devices would be communicating with each other. After designing the framework for the cat monitor, there were a few separate elements of design. One element was figuring out how to get the temperature sensor data into the node server, and then display it on a chart on a remote host. Another element of the project was figuring out how to accept a user input from the remote portal and pass that input to node.js and then to the ESP32 so it can turn on the LED. Another element of the cat monitor is to wire the camera to the raspberry pi, and have a remote portal where the user can watch the livestream from the camera. The final step of the project was to use DDNS and properly port forward so that all of the different elements of the project can work together in sync. With all of the tasks identified, our team divided to complete all of the separate components. John and Ananth worked on getting the temperature sensor data to the front end. John and Jeffrey worked on getting the LED input from the front end and turning on the LED. Jeffrey worked on getting the livestream camera to work. Jeffrey, John, and Kai worked on the front end graphs and port forwarding to ensure a seamless integration of components. After bringing all of the separate components together, we began testing and made sure that the port forwarding, DDNS, and node.js servers were all functioning properly. After combining all of the components, we didn’t run into many issues on the node.js or ESP32s, but we did have some minor formatting issues to fix on the front end chart. We were also unsure of how to refresh the page with live data, which we also ended up troubleshooting to make sure that the live data was added to the chart seamlessly while also being able to view all of the past data. After this minor fixes, our project was successfully able to turn on and off the LED, read the temperature data and display it on a chart, and view the cat's webcam.
-
-### Self-Assessment 
-
-| Objective Criterion | Rating | Max Value  | 
-|---------------------------------------------|:-----------:|:---------:|
-| Objective One | 1 |  1     | 
-| Objective Two | 1 |  1     | 
-| Objective Three | 1 |  1     | 
-| Objective Four | 1 |  1     | 
-| Objective Five | 1 |  1     | 
-| Objective Six | 1 |  1     | 
-
 
 ### Solution Design
 
@@ -60,7 +45,6 @@ Image of the HTML site that the live camera footage is being displayed on.
 Diagram like above that also includes the router.
 
 ### Supporting Artifacts
-- [Link to video technical presentation](https://drive.google.com/file/d/1ebLrnnc_dz17ZMl8CCj-dVdRYC36udM4/view?usp=sharing). Not to exceed 120s
 - [Link to video demo](https://drive.google.com/file/d/1cqoyowgOMQD84HBG7u9QK6C-4om4HYGg/view?usp=sharing). Not to exceed 120s
 
 
